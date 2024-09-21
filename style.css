@@ -83,6 +83,72 @@ header h2 {
 
 }
 
+/* TODO AUIDO */
+.audiodiv {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: var(--color-secundario);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    animation: bounce;
+    animation-duration:6s;
+    animation-iteration-count:300ms;
+}
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+.audiodiv img {
+    padding: 3px 0 0 0;
+    margin: 0;
+    width: 60px;
+    height: 60px;
+}
+.play {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Ocultar los controles nativos del audio */
+audio::-webkit-media-controls {
+    display:none !important;
+}
+
+audio::-webkit-media-controls-panel {
+    display:none !important;
+}
+
+audio::-webkit-media-controls-play-button {
+    display:none !important;
+}
+
+audio::-webkit-media-controls-start-playback-button {
+    display:none !important;
+}
+
+audio::-webkit-media-controls-enclosure {
+    display:none !important;
+}
+
+audio::-webkit-media-controls-current-time-display {
+    display:none !important;
+}
+
 header .namesdos {
     width: 140px;
     padding: 10px 0 0 0px;
@@ -215,40 +281,6 @@ header .namesdos {
 }
 
 
-.audiodiv {
-    width: 100%;
-    padding: 20px 0 0 0 ;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-audio::-webkit-media-controls-panel {
-    background-color: var(--color-secundario) !important; /* Cambia este color al que desees */
-}
-
-audio::-webkit-media-controls-enclosure {
-    background-color: #ffffff !important; /* Cambia este color al que desees */
-}
-
-audio {
-    width: 80%;
-    color: #fcf6ef;
-    background-color: transparent; /* Asegura que el fondo del contenedor sea transparente */
-}
-audio::-webkit-media-controls-play-button,
-audio::-webkit-media-controls-timeline,
-audio::-webkit-media-controls-current-time-display,
-audio::-webkit-media-controls-time-remaining-display,
-audio::-webkit-media-controls-mute-button,
-audio::-webkit-media-controls-volume-slider-container,
-audio::-webkit-media-controls-volume-slider {
-    color: white !important; /* Cambia el color de los íconos a blanco */
-    fill: white !important; /* Cambia el color de relleno de los íconos */
-}
-
-audio::-webkit-media-controls-enclosure {
-    background-color: transparent !important; /* Haz transparente el fondo del reproductor */
-}
 .lovestory {
     width: 100vw;
     height: auto;

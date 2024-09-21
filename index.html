@@ -43,10 +43,6 @@
     </div>-->
     <div id="cuenta"></div>
  
-    <div class="audiodiv">
-        <audio controls .mejs-container autoplay src="./pero-te-conoci.mp3"></audio >
-    </div> 
-    
 
 
     <div data-aos="fade-up" class="details">
@@ -57,7 +53,7 @@
         <img class="iconss" src="./img/embarque.png" alt="">
         <img class="img1" src="./img/datos.png" alt="details">
         <p>ARRIBO: 20.00 PM <br>
-            TERMINAL: Haras Los Vagones, Montevideo
+        TERMINAL: Haras Los Vagones, Montevideo
         </p>
       
 
@@ -189,7 +185,14 @@
         <img src="./img/logo.png" alt="">
         
     </div>
-
+    <div class="audiodiv">
+        <audio id="myAudio" preload="none">
+            <source src="./a-thousand-years-spanish-version.mp3" type="audio/mpeg">
+        </audio>
+        <div id="playPauseBtn" class="play">
+            <img src="./figuras/notamusical.png" alt="Icono de música">
+        </div>
+      </div>
  
 <footer>
     <div class="contenido">
@@ -210,7 +213,7 @@
     </div>
     
  </footer>
-
+ <script src="reproductor.js"></script>
     <script src="./countdown.js/simplyCountdown.min.js"></script>
     <script src="./countdown.js/countdown.js"></script>
 

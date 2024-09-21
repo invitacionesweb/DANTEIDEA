@@ -158,8 +158,8 @@ header .namesdos {
 
    }
    header .boton {
-    margin-top: 480px;
-
+    margin: 560px 0 0 0;
+    
    }
    header .date p{
     padding: 0;

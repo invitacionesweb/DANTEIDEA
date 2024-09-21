@@ -369,16 +369,16 @@ header .namesdos {
     
 }
 .details .sello {
-    width: 97px;
+    width: 87px;
     position: absolute;
     left: 0px;
     
 }
 .sello2{
-    top: 200px;
+    top: 220px;
 }
 .sello1{
-    top: 280px;
+    top: 300px;
 }
 .gift-block {
     display: flex;

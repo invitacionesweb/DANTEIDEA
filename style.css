@@ -92,7 +92,7 @@ header .namesdos {
 
    }
    header .boton {
-    margin-top: 500px;
+    margin-top: 480px;
 
    }
    header .date p{
@@ -317,10 +317,10 @@ header .namesdos {
     
 }
 .sello2{
-    top: 180px;
+    top: 200px;
 }
 .sello1{
-    top: 260px;
+    top: 280px;
 }
 .gift-block {
     display: flex;

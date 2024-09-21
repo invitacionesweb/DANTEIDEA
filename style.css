@@ -694,5 +694,8 @@ footer img {
     background-size: cover;
     background-repeat: no-repeat;
 }
+.parafondo .img1 {
+    width: 200px;
+}
 
   }
